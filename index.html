@@ -293,19 +293,7 @@
   </main>
 
   <script>
-    /*
-      ============================================================
-      CẤU HÌNH DUY NHẤT CẦN LÀM 1 LẦN
-      ============================================================
-
-      Sau khi Deploy Google Apps Script dưới dạng Web App:
-      dán URL kết thúc bằng /exec vào APP_SCRIPT_URL.
-
-      Ví dụ:
-      const APP_SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbxxxxxxxx/exec";
-    */
-
+  
     const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzOKdooC7f0TQkubwgU0ubjje64LvBxTMGngAUVcpqk6vnHkz_oS_4_vFwuIEKqFrP1/exec";
     const SITE_KEY = "site1";
 
@@ -396,8 +384,7 @@
       }).join("");
     }
 
-    // Callback toàn cục để Apps Script gọi qua JSONP.
-    window.receiveExamData = function(data){
+     window.receiveExamData = function(data){
       renderPage(data);
     };
 
